@@ -7,7 +7,7 @@ import { ThemeProvider } from "@mui/material/styles";
 import App from "./app/App";
 import reportWebVitals from "./reportWebVitals";
 import "./css/index.css";
-import theme from "./theme";
+import theme from "./app/MaterialTheme/index";
 
 // const container = document.getElementById('root')!;
 // const root = createRoot(container);
