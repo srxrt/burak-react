@@ -2,10 +2,12 @@ import React from "react";
 import { Box, Button, Container, Stack, Typography } from "@mui/material";
 
 import "../css/app.css";
-import { RippleBadge } from "./MaterialTheme/styled";
+
 import { Link, Route, Switch } from "react-router-dom";
-import { Users } from "./screens/Users";
-import { About } from "./screens/About";
+import { HomePage } from "./screens/homePage";
+import { OrdersPage } from "./screens/ordersPage";
+import { UserPage } from "./screens/userPage";
+import { ProductsPage } from "./screens/productsPage";
 
 function App() {
 	return (
@@ -18,31 +20,34 @@ function App() {
 					</li>
 					<li>
 						{" "}
-						<Link to="/about">About</Link>
+						<Link to="/products">Products</Link>
 					</li>
 					<li>
 						{" "}
-						<Link to="/users">Users</Link>
+						<Link to="/orders">Orders</Link>
+					</li>
+					<li>
+						{" "}
+						<Link to="/member-page">UserPage</Link>
 					</li>
 				</ul>
 			</nav>
 			<Switch>
-				<Route path="/about">
-					<About />
+				<Route path="/products">
+					<ProductsPage />
 				</Route>
-				<Route path="/users">
-					<Users />
+				<Route path="/member-page">
+					<UserPage />
+				</Route>
+				<Route path="/orders">
+					<OrdersPage />
 				</Route>
 				<Route path="/">
-					<Home />
+					<HomePage />
 				</Route>
 			</Switch>
 		</div>
 	);
-}
-
-function Home() {
-	return <Container>HOme</Container>;
 }
 
 export default App;
