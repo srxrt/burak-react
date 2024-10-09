@@ -143,6 +143,7 @@
 	background: url("/public/img/logo.webp");
 	background-size: contain;
 	background-repeat: no-repeat;
+	filter: invert(30%);
 }
 
 .other-navbar {
