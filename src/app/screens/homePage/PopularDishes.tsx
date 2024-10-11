@@ -72,7 +72,7 @@ export default function PopularDishes() {
 											>
 												<Typography
 													startDecorator={<DescriptionOutlined />}
-													text-color="neutral.300"
+													textColor="neutral.300"
 												>
 													This is delicious meal
 												</Typography>
