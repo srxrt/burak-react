@@ -2,8 +2,8 @@ import { Box, Container, Stack, Tab, Tabs } from "@mui/material";
 import { SyntheticEvent, useState } from "react";
 import { TabContext, TabPanel } from "@mui/lab";
 import "../../../css/order.css";
-import { PausedOrders } from "./PausedOrders";
-import { ProcessOrders } from "./ProcessOrders";
+import PausedOrders from "./PausedOrders";
+import ProcessOrders from "./ProcessOrders";
 import FinishedOrders from "./FinishedOrders";
 import { LocationOn } from "@mui/icons-material";
 
