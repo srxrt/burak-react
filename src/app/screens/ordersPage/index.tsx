@@ -32,15 +32,9 @@ export default function OrdersPage() {
 							</Box>
 						</Box>
 						<Stack className="order-main-content">
-							<TabPanel value="1">
-								<PausedOrders />
-							</TabPanel>
-							<TabPanel value="2">
-								<ProcessOrders />
-							</TabPanel>
-							<TabPanel value="3">
-								<FinishedOrders />
-							</TabPanel>
+							<PausedOrders />
+							<ProcessOrders />
+							<FinishedOrders />
 						</Stack>
 					</TabContext>
 				</Stack>
