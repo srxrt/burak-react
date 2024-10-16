@@ -6,9 +6,9 @@ import moment from "moment";
 
 export default function FinishedOrders() {
 	return (
-		<TabPanel value={"2"}>
+		<TabPanel value={"3"}>
 			<Stack>
-				{[1, 2].map((ele, index) => {
+				{[].map((ele, index) => {
 					return (
 						<Box key={index} className={"order-main-box"}>
 							<Box className={"order-box-scroll"}>

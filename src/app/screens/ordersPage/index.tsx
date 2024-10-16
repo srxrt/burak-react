@@ -59,15 +59,56 @@ export default function OrdersPage() {
 									/>
 								</div>
 							</div>
-							<span className="order-user-name">Martin</span>
+							<span className="order-user-name">Kevin</span>
 							<span className="order-user-prof">User</span>
 						</Box>
 						<Box className="liner"></Box>
 						<Box className="order-user-address">
-							<div style={{ display: "flex" }}>
+							<div style={{ display: "flex", alignItems: "center" }}>
 								<LocationOn />
+								<p>Do not exist</p>
 							</div>
 						</Box>
+					</Box>
+					<Box className={"order-info-box"} sx={{ mt: "20px" }}>
+						<input
+							type={"text"}
+							name={"cardNumber"}
+							placeholder={"Card number : **** 4090 2002 7495"}
+							className={"card-input"}
+						/>
+						<div
+							style={{
+								display: "flex",
+								flexDirection: "row",
+								justifyContent: "space-between",
+							}}
+						>
+							<input
+								type={"text"}
+								name={"cardPeriod"}
+								placeholder={"07 / 24"}
+								className={"card-half-input"}
+							/>
+							<input
+								type={"text"}
+								name={"cardCVV"}
+								placeholder={"CVV : 010"}
+								className={"card-half-input"}
+							/>
+						</div>
+						<input
+							type={"text"}
+							name={"cardCreator"}
+							placeholder={"Kevin Malone"}
+							className={"card-input"}
+						/>
+						<div className={"cards-box"}>
+							<img src={"/icons/paypal-card.svg"} />
+							<img src={"/icons/master-card.svg"} />
+							<img src={"/icons/western-card.svg"} />
+							<img src={"/icons/visa-card.svg"} />
+						</div>
 					</Box>
 				</Stack>
 			</Container>
